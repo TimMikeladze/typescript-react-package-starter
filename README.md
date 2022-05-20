@@ -1,6 +1,6 @@
 # React Package Starter
 
-This is a simple and slightly opinionated starter kit for developing and publishing React packages. It comes with a several pre-configured tools, so you could spend focus on coding instead of writing package configuration for the nth time.
+This is a simple and slightly opinionated starter kit for developing and publishing React packages. It comes with a several pre-configured tools, so you could focus on coding instead of configuring a project for the nth time.
 
 ## Getting started
 
@@ -64,7 +64,7 @@ npm run commit
 
 ### Publishing
 
-Create a semantic version tag and publish to Github Releases. When a new release is detected a Github Action will automatically build the package and publish it to NPM. Additionally, a Storybook will be published to Github pages as well.
+Create a semantic version tag and publish to Github Releases. When a new release is detected a Github Action will automatically build the package and publish it to NPM. Additionally, a Storybook will be published to Github pages.
 
 Learn more about how to use the `release` command [here](https://github.com/vercel/release).
 
