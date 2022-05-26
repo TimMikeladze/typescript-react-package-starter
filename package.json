@@ -82,7 +82,7 @@
     "@typescript-eslint/parser": "5.25.0",
     "babel-loader": "8.2.5",
     "commitizen": "4.2.4",
-    "concurrently": "7.2.0",
+    "concurrently": "7.2.1",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "8.16.0",
     "eslint-config-airbnb": "19.0.4",
