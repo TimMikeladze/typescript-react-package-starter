@@ -5,7 +5,7 @@ name: Publish
 
 on:
   release:
-    types: [created]
+    types: [published]
 
 jobs:
   build:
@@ -26,19 +26,22 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: lts/*
-      - run: npm run deploy-storybook -- --ci --host-token-env-variable=GITHUB_TOKEN
+      - run: npm install
+      - run: npm run deploy-storybook -- --ci
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
 
-  publish-npm:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: lts/*
-          registry-url: https://registry.npmjs.org/
-      - run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+# Uncomment to enable auto publishing to npm
+
+#  publish-npm:
+#    needs: build
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v3
+#      - uses: actions/setup-node@v3
+#        with:
+#          node-version: lts/*
+#          registry-url: https://registry.npmjs.org/
+#      - run: npm publish --access public
+#        env:
+#          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
