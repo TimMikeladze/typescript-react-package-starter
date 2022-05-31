@@ -20,7 +20,7 @@
     "test:watch": "jest --watch",
     "prepare": "husky install",
     "commit": "cz",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 --quiet",
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
     "release": "release --"
