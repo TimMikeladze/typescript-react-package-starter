@@ -15,5 +15,5 @@ const Template: ComponentStory<typeof Example> = (args) => <Example {...args} />
 export const Primary = Template.bind({});
 
 Primary.args = {
-
+  text: 'Hello World',
 };

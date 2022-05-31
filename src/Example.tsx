@@ -1,9 +1,13 @@
 import React from 'react';
 
-export function Example() {
+export type ExampleProps = {
+  text?: String;
+}
+
+export function Example(props: ExampleProps) {
   return (
     <div>
-      <h1>Hello World</h1>
+      {props.text}
     </div>
   );
 }
