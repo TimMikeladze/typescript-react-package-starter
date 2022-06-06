@@ -7,10 +7,10 @@ This is a simple and slightly opinionated starter kit for developing and publish
 ```console
 npx degit TimMikeladze/tsup-react-package-starter my-react-package
 
-npm install
-
-npm run dev
+yarn && yarn dev
 ```
+
+❗Important note: This project uses [yarn](https://yarnpkg.com/) for managing dependencies.
 
 ## What's included?
 
@@ -33,25 +33,25 @@ npm run dev
 Watch and rebuild code with `tsup` and runs Storybook to preview your UI during development.
 
 ```console
-npm run dev
+yarn dev
 ```
 
 Run tests with `jest` when changes are detected.
 
 ```console
-npm run test:watch
+yarn test:watch
 ```
 
 To run all tests once without watching for changes.
 
 ```console
-npm run test
+yarn test
 ```
 
 Build package with `tsup` for production.
 
 ```console
-npm run build
+yarn build
 ```
 
 ### Committing
@@ -59,7 +59,7 @@ npm run build
 When you are ready to commit simply run the following command to get a well formatted commit message. All staged files will automatically be linted and fixed as well.
 
 ```console
-npm run commit
+yarn commit
 ```
 
 ### Publishing
@@ -69,7 +69,7 @@ Create a semantic version tag and publish to Github Releases. When a new release
 Learn more about how to use the `release` command [here](https://github.com/vercel/release).
 
 ```console
-npm run release <optional semver type>
+yarn release <optional semver type>
 ```
 
 ❗Important note: in order to publish package to NPM you must add your token as a Github Action secret. Learn more on how to configure your repository and publish packages through Github Actions [here](https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages).

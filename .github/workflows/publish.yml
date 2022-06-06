@@ -8,16 +8,6 @@ on:
     types: [published]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: lts/*
-      - run: npm install
-      - run: npm run build
-
   publish-storybook:
     needs: build
     runs-on: ubuntu-latest
@@ -26,15 +16,14 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: lts/*
-      - run: npm install
-      - run: npm run deploy-storybook -- --ci
+      - run: yarn
+      - run: yarn deploy-storybook --ci
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
 
 # Uncomment to enable auto publishing to npm
 
 #  publish-npm:
-#    needs: build
 #    runs-on: ubuntu-latest
 #    steps:
 #      - uses: actions/checkout@v3
@@ -42,6 +31,8 @@ jobs:
 #        with:
 #          node-version: lts/*
 #          registry-url: https://registry.npmjs.org/
+#      - run: yarn
+#      - run: yarn build
 #      - run: npm publish --access public
 #        env:
 #          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
