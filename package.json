@@ -59,7 +59,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "cz-conventional-changelog"
+      "path": "./node_modules/@ryansonshine/cz-conventional-changelog"
     }
   },
   "engines": {
@@ -69,6 +69,8 @@
     "@babel/core": "7.18.2",
     "@commitlint/cli": "17.0.2",
     "@commitlint/config-conventional": "17.0.2",
+    "@ryansonshine/commitizen": "4.2.8",
+    "@ryansonshine/cz-conventional-changelog": "3.3.4",
     "@storybook/addon-actions": "6.5.7",
     "@storybook/addon-essentials": "6.5.7",
     "@storybook/addon-interactions": "6.5.7",
@@ -86,9 +88,7 @@
     "@typescript-eslint/eslint-plugin": "5.27.0",
     "@typescript-eslint/parser": "5.27.0",
     "babel-loader": "8.2.5",
-    "commitizen": "4.2.4",
     "concurrently": "7.2.1",
-    "cz-conventional-changelog": "3.3.0",
     "eslint": "8.17.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-plugin-import": "2.26.0",
