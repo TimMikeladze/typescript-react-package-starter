@@ -79,7 +79,7 @@
     "@storybook/manager-webpack5": "6.5.7",
     "@storybook/react": "6.5.7",
     "@storybook/storybook-deployer": "2.8.11",
-    "@storybook/testing-library": "0.0.11",
+    "@storybook/testing-library": "0.0.13",
     "@types/jest": "28.1.1",
     "@types/node": "17.0.40",
     "@types/react": "18.0.12",
