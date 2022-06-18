@@ -118,6 +118,6 @@
     "debug": "2.6.9",
     "node-fetch": "2.6.7",
     "trim": "0.0.3",
-    "trim-newlines": "3.0.1"
+    "trim-newlines": "4.0.2"
   }
 }
