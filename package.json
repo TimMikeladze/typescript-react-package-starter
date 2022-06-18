@@ -117,7 +117,7 @@
     "glob-parent": "5.1.2",
     "debug": "2.6.9",
     "node-fetch": "2.6.7",
-    "trim": "0.0.3",
+    "trim": "1.0.1",
     "trim-newlines": "3.0.1"
   }
 }
