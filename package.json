@@ -114,10 +114,13 @@
     "react-dom": ">=17"
   },
   "resolutions": {
-    "glob-parent": "5.1.2",
-    "debug": "2.6.9",
-    "node-fetch": "2.6.7",
-    "trim": "0.0.3",
-    "trim-newlines": "3.0.1"
+    "debug": ">=2.6.9",
+    "glob-parent": ">=5.1.2",
+    "got": ">=11.8.5",
+    "node-fetch": ">=2.6.7",
+    "parse-path": ">5.0.0",
+    "terser": ">=5.14.2",
+    "trim": ">=0.0.3",
+    "trim-newlines": ">=3.0.1"
   }
 }
