@@ -1,13 +1,22 @@
 {
-  "extends": ["config:base"],
-  "semanticCommits": "enabled",
-  "stabilityDays": 3,
-  "prCreation": "not-pending",
-  "labels": ["type: dependencies"],
+  "extends": [
+    "config:base"
+  ],
+  "timezone": "America/Los_Angeles",
+  "schedule": [
+    "on the first day of the month"
+  ],
   "packageRules": [
     {
-      "packageNames": ["node"],
-      "enabled": false
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch"
     }
   ]
 }
