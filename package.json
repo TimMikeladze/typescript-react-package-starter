@@ -100,7 +100,7 @@
     "eslint-plugin-unused-imports": "2.0.0",
     "husky": "8.0.1",
     "jest": "28.1.1",
-    "lint-staged": "13.0.2",
+    "lint-staged": "13.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-test-renderer": "18.2.0",
