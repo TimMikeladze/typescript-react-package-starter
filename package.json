@@ -23,7 +23,7 @@
     "storybook": "start-storybook -p 6006 --quiet",
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
-    "release": "release"
+    "release": "npx release"
   },
   "tsup": {
     "entry": [
@@ -104,7 +104,6 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-test-renderer": "18.2.0",
-    "release": "6.3.1",
     "ts-jest": "28.0.8",
     "tsup": "6.2.3",
     "typescript": "4.8.2"
@@ -114,10 +113,7 @@
     "react-dom": ">=17"
   },
   "resolutions": {
-    "debug": ">=2.6.9",
     "glob-parent": ">=5.1.2",
-    "got": ">=11.8.5",
-    "node-fetch": ">=2.6.7",
     "parse-path": ">5.0.0",
     "terser": ">=5.14.2",
     "trim": ">=0.0.3",
