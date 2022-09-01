@@ -17,7 +17,7 @@ yarn && yarn dev
 - ⚡️[tsup](https://github.com/egoist/tsup) - The simplest and fastest way to bundle your TypeScript libraries. Used to bundle package as ESM and CJS modules.
 - 📖 [Storybook](https://storybook.js.org/) - Build UI components and pages in isolation. It streamlines UI development, testing, and documentation.
 - 🧪 [Jest](https://jestjs.io/) - A testing framework for JavaScript. Preconfigured to work with TypeScript and JSX.
-- 🔼 [Release](https://github.com/vercel/release) - Release is a command line tool to automatically generate a new GitHub Release and populates it with the changes (commits) made since the last release.
+- 🔼 [Release-it](https://github.com/release-it/release-it/) - release-it is a command line tool to automatically generate a new GitHub Release and populates it with the changes (commits) made since the last release.
 - 🐙 [Test & Publish via Github Actions](https://docs.github.com/en/actions) - CI/CD workflows for your package. Run tests on every commit plus integrate with Github Releases to automate publishing package to NPM and Storybook to Github Pages.
 - 📄 [Commitizen](https://github.com/commitizen/cz-cli) — When you commit with Commitizen, you'll be prompted to fill out any required commit fields at commit time.
 - 🚓 [Commitlint](https://github.com/conventional-changelog/commitlint) — Checks that your commit messages meet the conventional commit format.
@@ -66,10 +66,10 @@ yarn commit
 
 Create a semantic version tag and publish to Github Releases. When a new release is detected a Github Action will automatically build the package and publish it to NPM. Additionally, a Storybook will be published to Github pages.
 
-Learn more about how to use the `release` command [here](https://github.com/vercel/release).
+Learn more about how to use the `release-it` command [here](https://github.com/release-it/release-it).
 
 ```console
-yarn release <optional semver type>
+yarn release
 ```
 
 ❗Important note: in order to publish package to NPM you must add your token as a Github Action secret. Learn more on how to configure your repository and publish packages through Github Actions [here](https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages).
