@@ -1,0 +1,5 @@
+dist
+coverage
+storybook-static
+.prettierignore
+yarn.lock

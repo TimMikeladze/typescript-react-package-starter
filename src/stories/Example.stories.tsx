@@ -6,11 +6,12 @@ import { Example } from '..';
 export default {
   title: 'Example',
   component: Example,
-  argTypes: {
-  },
+  argTypes: {},
 } as ComponentMeta<typeof Example>;
 
-const Template: ComponentStory<typeof Example> = (args) => <Example {...args} />;
+const Template: ComponentStory<typeof Example> = (args) => (
+  <Example {...args} />
+);
 
 export const Primary = Template.bind({});
 

@@ -4,7 +4,11 @@ module.exports = {
     es2021: true,
     jest: true,
   },
-  extends: ['plugin:react/recommended', 'airbnb', 'plugin:storybook/recommended'],
+  extends: [
+    'plugin:react/recommended',
+    'airbnb',
+    'plugin:storybook/recommended',
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -13,7 +17,12 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'typescript-sort-keys', 'unused-imports'],
+  plugins: [
+    'react',
+    '@typescript-eslint',
+    'typescript-sort-keys',
+    'unused-imports',
+  ],
   rules: {
     'typescript-sort-keys/interface': 'error',
     'typescript-sort-keys/string-enum': 'error',
