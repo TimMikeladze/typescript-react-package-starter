@@ -3,3 +3,4 @@ coverage
 storybook-static
 .prettierignore
 yarn.lock
+*.snap

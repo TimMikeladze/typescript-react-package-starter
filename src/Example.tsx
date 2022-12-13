@@ -5,5 +5,10 @@ export type ExampleProps = {
 };
 
 export function Example(props: ExampleProps) {
-  return <div>{props.text}</div>;
+  const [count, setCount] = React.useState(0);
+  return (
+    <button onClick={() => setCount(count + 1)} type="button">
+      {`${props.text} ${count}`}
+    </button>
+  );
 }

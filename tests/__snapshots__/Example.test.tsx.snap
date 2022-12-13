@@ -1,3 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `<div />`;
+exports[`renders correctly 1`] = `
+<button
+  onClick={[Function]}
+  type="button"
+>
+  Clicked this many times 0
+</button>
+`;

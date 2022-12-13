@@ -16,5 +16,5 @@ const Template: ComponentStory<typeof Example> = (args) => (
 export const Primary = Template.bind({});
 
 Primary.args = {
-  text: 'Hello World',
+  text: 'Clicked this many times:',
 };
