@@ -129,9 +129,7 @@
   },
   "resolutions": {
     "glob-parent": ">=5.1.2",
-    "parse-path": ">5.0.0",
     "parse-url": ">=8.1.0",
-    "terser": ">=5.14.2",
     "trim": ">=0.0.3",
     "trim-newlines": ">=3.0.1"
   }
