@@ -15,6 +15,7 @@ yarn && yarn dev
 ## What's included?
 
 - ⚡️[tsup](https://github.com/egoist/tsup) - The simplest and fastest way to bundle your TypeScript libraries. Used to bundle package as ESM and CJS modules. Supports TypeScript, Code Splitting, PostCSS, and more out of the box.
+- 🔗 [Yalc](https://github.com/wclr/yalc) - Better workflow than npm | yarn link for package authors.
 - 📖 [Storybook](https://storybook.js.org/) - Build UI components and pages in isolation. It streamlines UI development, testing, and documentation.
 - 🧪 [Jest](https://jestjs.io/) - A testing framework for JavaScript. Preconfigured to work with TypeScript and JSX.
 - 🔼 [Release-it](https://github.com/release-it/release-it/) - release-it is a command line tool to automatically generate a new GitHub Release and populates it with the changes (commits) made since the last release.
@@ -43,16 +44,42 @@ Run tests with `jest` when changes are detected.
 yarn test:watch
 ```
 
+### Building
+
+Build package with `tsup` for production.
+
+```console
+yarn build
+```
+
+### Linking
+
+Often times you want to `link` the package you're developing to another project locally to test it out to circumvent the need to publish it to NPM.
+
+For this we use [yalc](https://github.com/wclr/yalc) which is a tool for local package development and simulating the publishing and installation of packages.
+
+In a project where you want to consume your package simply run:
+
+```console
+npx yalc link my-react-package
+# or
+yarn yalc add my-react-package
+```
+
+Learn more about `yalc` [here](https://github.com/wclr/yalc).
+
+### Testing
+
 To run all tests once without watching for changes.
 
 ```console
 yarn test
 ```
 
-Build package with `tsup` for production.
+To watch for changes and run tests.
 
-```console
-yarn build
+```
+yarn test:watch
 ```
 
 ### Committing
@@ -63,7 +90,7 @@ When you are ready to commit simply run the following command to get a well form
 yarn commit
 ```
 
-### Publishing
+### Releasing, tagging & publishing to NPM
 
 Create a semantic version tag and publish to Github Releases. When a new release is detected a Github Action will automatically build the package and publish it to NPM. Additionally, a Storybook will be published to Github pages.
 
@@ -72,6 +99,14 @@ Learn more about how to use the `release-it` command [here](https://github.com/r
 ```console
 yarn release
 ```
+
+When you are ready to publish to NPM simply run the following command:
+
+```console
+yarn publish
+```
+
+#### Auto publish after Github Release
 
 ❗Important note: in order to publish package to NPM you must add your token as a Github Action secret. Learn more on how to configure your repository and publish packages through Github Actions [here](https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages).
 

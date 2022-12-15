@@ -1,7 +1,7 @@
 {
-  "name": "",
+  "name": "tsup-react-package-starter",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "author": "",
   "license": "",
   "keywords": [],
@@ -10,9 +10,9 @@
     "url": ""
   },
   "scripts": {
-    "dev": "concurrently \"yarn build --watch\" \"yarn storybook\"",
-    "build": "tsup",
-    "type-check": "tsc --noEmit",
+    "dev": "concurrently \"yarn build --watch\" \"yarn storybook\" \"yarn test:watch\" ",
+    "build": "tsup --onSuccess \"yarn yalc publish\"",
+    "type-check": "tsc",
     "lint": "eslint --ignore-path .gitignore \"{src,tests}/**/*.+(ts|js|tsx)\"",
     "lint:fix": "yarn lint --fix && prettier --write .",
     "test": "jest --coverage",
@@ -23,7 +23,7 @@
     "storybook": "start-storybook -p 6006 --quiet",
     "build-storybook": "build-storybook",
     "deploy-storybook": "storybook-to-ghpages",
-    "release": "yarn release-it"
+    "release": "yarn build && yarn release-it"
   },
   "tsup": {
     "entry": [
@@ -121,7 +121,8 @@
     "release-it": "15.5.1",
     "ts-jest": "29.0.3",
     "tsup": "6.5.0",
-    "typescript": "4.9.3"
+    "typescript": "4.9.3",
+    "yalc": "1.0.0-pre.53"
   },
   "peerDependencies": {
     "react": ">=17",
