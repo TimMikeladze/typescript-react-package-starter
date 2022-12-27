@@ -10,7 +10,7 @@ npx degit TimMikeladze/tsup-react-package-starter my-react-package
 yarn && yarn dev
 ```
 
-❗Important note: This project uses [yarn](https://yarnpkg.com/) for managing dependencies. If you want to use npm or pnpmn, remove the `yarn.lock` and control-f / replace usages of `yarn` with `npm` or `pnpm`.
+❗Important note: This project uses [yarn](https://yarnpkg.com/) for managing dependencies. If you want to use another package manager, remove the `yarn.lock` and control-f for usages of `yarn` in the project and replace them with your package manager of choice.
 
 ## What's included?
 
