@@ -4,3 +4,7 @@ storybook-static
 .prettierignore
 yarn.lock
 *.snap
+.npmrc
+.husky
+.gitignore
+.editorconfig
