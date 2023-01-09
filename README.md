@@ -7,6 +7,8 @@ This is a simple and slightly opinionated starter kit for developing and publish
 ```console
 npx degit TimMikeladze/tsup-react-package-starter my-react-package
 
+cd my-react-package && git init 
+
 yarn && yarn dev
 ```
 
