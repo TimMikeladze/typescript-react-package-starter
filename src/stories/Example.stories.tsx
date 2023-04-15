@@ -1,5 +1,5 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 
 import { Example } from '..';
 
@@ -7,11 +7,9 @@ export default {
   title: 'Example',
   component: Example,
   argTypes: {},
-} as ComponentMeta<typeof Example>;
+} as Meta<typeof Example>;
 
-const Template: ComponentStory<typeof Example> = (args) => (
-  <Example {...args} />
-);
+const Template: StoryFn<typeof Example> = (args) => <Example {...args} />;
 
 export const Primary = Template.bind({});
 
