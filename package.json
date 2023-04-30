@@ -139,6 +139,7 @@
     "glob-parent": ">=5.1.2",
     "parse-url": ">=8.1.0",
     "trim": ">=0.0.3",
-    "trim-newlines": ">=3.0.1"
+    "trim-newlines": ">=3.0.1",
+    "yaml": ">=2.2.2"
   }
 }
