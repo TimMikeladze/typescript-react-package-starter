@@ -127,7 +127,7 @@
     "release-it": "15.10.3",
     "storybook": "7.0.11",
     "ts-jest": "29.1.0",
-    "tsup": "6.7.0",
+    "tsup": "7.1.0",
     "typescript": "5.0.4",
     "yalc": "1.0.0-pre.53"
   },
