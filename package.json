@@ -41,7 +41,8 @@
     ],
     "external": [
       "react"
-    ]
+    ],
+    "injectStyle": false
   },
   "types": "./dist/index.d.ts",
   "exports": {
