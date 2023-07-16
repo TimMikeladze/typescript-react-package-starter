@@ -7,7 +7,7 @@ This is a simple and slightly opinionated starter kit for developing and publish
 ```console
 npx degit TimMikeladze/tsup-react-package-starter my-react-package
 
-cd my-react-package && git init 
+cd my-react-package && git init
 
 yarn && yarn dev
 ```
@@ -19,7 +19,7 @@ yarn && yarn dev
 - ⚡️[tsup](https://github.com/egoist/tsup) - The simplest and fastest way to bundle your TypeScript libraries. Used to bundle package as ESM and CJS modules. Supports TypeScript, Code Splitting, PostCSS, and more out of the box.
 - 🔗 [Yalc](https://github.com/wclr/yalc) - Better workflow than npm | yarn link for package authors.
 - 📖 [Storybook](https://storybook.js.org/) - Build UI components and pages in isolation. It streamlines UI development, testing, and documentation.
-- 🧪 [Jest](https://jestjs.io/) - A testing framework for JavaScript. Preconfigured to work with TypeScript and JSX.
+- ⚡️ [Vitest](https://vitest.dev/) - A testing framework for JavaScript. Preconfigured to work with TypeScript and JSX.
 - 🔼 [Release-it](https://github.com/release-it/release-it/) - release-it is a command line tool to automatically generate a new GitHub Release and populates it with the changes (commits) made since the last release.
 - 🐙 [Test & Publish via Github Actions](https://docs.github.com/en/actions) - CI/CD workflows for your package. Run tests on every commit plus integrate with Github Releases to automate publishing package to NPM and Storybook to Github Pages.
 - 📄 [Commitizen](https://github.com/commitizen/cz-cli) — When you commit with Commitizen, you'll be prompted to fill out any required commit fields at commit time.
@@ -40,10 +40,10 @@ Watch and rebuild code with `tsup` and runs Storybook to preview your UI during 
 yarn dev
 ```
 
-Run tests with `jest` when changes are detected.
+Run all tests and watch for changes
 
 ```console
-yarn test:watch
+yarn test
 ```
 
 ### Building
@@ -69,20 +69,6 @@ yarn yalc add my-react-package
 ```
 
 Learn more about `yalc` [here](https://github.com/wclr/yalc).
-
-### Testing
-
-To run all tests once without watching for changes.
-
-```console
-yarn test
-```
-
-To watch for changes and run tests.
-
-```
-yarn test:watch
-```
 
 ### Committing
 
@@ -117,7 +103,6 @@ yarn publish
 [tsup](https://github.com/egoist/tsup) supports PostCSS out of the box. Simply run `yarn add postcss -D` add a `postcss.config.js` file to the root of your project, then add any plugins you need. Learn more how to configure PostCSS [here](https://tsup.egoist.dev/#css-support).
 
 Additionally consider using the [tsup](https://github.com/egoist/tsup) configuration option `injectStyle` to inject the CSS directly into your Javascript bundle instead of outputting a separate CSS file.
-
 
 ## Built something using this starter-kit?
 
