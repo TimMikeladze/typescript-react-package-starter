@@ -10,7 +10,7 @@
     "url": ""
   },
   "scripts": {
-    "dev": "concurrently \"yarn build --watch\" \"yarn storybook\" \"yarn test:watch\" ",
+    "dev": "concurrently \"yarn build --watch\" \"yarn storybook\" \"yarn test\" ",
     "build": "tsup --onSuccess \"yarn yalc publish\"",
     "type-check": "tsc",
     "lint": "eslint --ignore-path .gitignore \"{src,tests}/**/*.+(ts|js|tsx)\"",
