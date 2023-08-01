@@ -109,3 +109,4 @@ Additionally consider using the [tsup](https://github.com/egoist/tsup) configura
 That's awesome! Feel free to add it to the list.
 
 - [next-auth-mui](https://github.com/TimMikeladze/next-auth-mui) - Sign-in dialog for NextAuth built with MUI and React. Detects configured OAuth and Email providers and renders buttons or input fields for each respectively. Fully themeable, extensible and customizable to support custom credential flows.
+- [next-upload](https://github.com/TimMikeladze/next-upload) - Turn-key solution for signed & secure file-uploads to an S3 compliant storage service such as R2, AWS, or Minio. Built for Next.js.
