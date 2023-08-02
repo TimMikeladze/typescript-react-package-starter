@@ -25,6 +25,7 @@ module.exports = {
     'unused-imports',
     'prettier',
     'prefer-arrow',
+    'sort-class-members',
   ],
   rules: {
     '@typescript-eslint/no-unused-vars': 'error',
@@ -51,6 +52,21 @@ module.exports = {
         disallowPrototype: true,
         singleReturnOnly: true,
         classPropertiesAllowed: false,
+      },
+    ],
+    'sort-class-members/sort-class-members': [
+      'error',
+      {
+        order: [
+          '[static-properties]',
+          '[properties]',
+          '[conventional-private-properties]',
+          'constructor',
+          '[static-methods]',
+          '[methods]',
+          '[conventional-private-methods]',
+        ],
+        accessorPairPositioning: 'getThenSet',
       },
     ],
   },

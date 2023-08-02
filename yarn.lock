@@ -6745,6 +6745,11 @@ eslint-plugin-react@7.33.1:
     semver "^6.3.1"
     string.prototype.matchall "^4.0.8"
 
+eslint-plugin-sort-class-members@^1.18.0:
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-sort-class-members/-/eslint-plugin-sort-class-members-1.18.0.tgz#561746eb30abc4e8bb8d582d359c652299e450d8"
+  integrity sha512-y4r5OC3LJNHJZCWfVwFnnRiNrQ/LRf7Pb1wD6/CP8Y4qmUvjtmkwrLvyY755p8SFTOOXVd33HgFuF3XxVW1xbg==
+
 eslint-plugin-storybook@0.6.13:
   version "0.6.13"
   resolved "https://registry.yarnpkg.com/eslint-plugin-storybook/-/eslint-plugin-storybook-0.6.13.tgz#897a9f6a9bb88c63b02f05850f30c28a9848a3f7"
