@@ -11,7 +11,7 @@
   },
   "scripts": {
     "dev": "concurrently \"yarn build --watch\" \"yarn storybook\" \"yarn test\" ",
-    "build": "tsup --onSuccess \"yarn yalc publish\"",
+    "build": "tsup --onSuccess \"yarn link:self\"",
     "type-check": "tsc",
     "lint": "eslint --ignore-path .gitignore \"{src,tests}/**/*.+(ts|js|tsx)\"",
     "lint:fix": "yarn lint --fix && prettier --write .",
@@ -22,7 +22,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "deploy-storybook": "storybook-to-ghpages",
-    "release": "yarn build && yarn release-it"
+    "release": "yarn build && yarn release-it",
+    "link:self": "yarn yalc publish && yarn link"
   },
   "tsup": {
     "entry": [
