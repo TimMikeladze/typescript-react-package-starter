@@ -8,3 +8,4 @@ yarn.lock
 .husky
 .gitignore
 .editorconfig
+.env.template
