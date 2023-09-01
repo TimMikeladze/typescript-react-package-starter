@@ -119,7 +119,7 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-sort-class-members": "^1.18.0",
     "eslint-plugin-storybook": "0.6.13",
-    "eslint-plugin-typescript-sort-keys": "2.3.0",
+    "eslint-plugin-typescript-sort-keys": "3.0.0",
     "eslint-plugin-unused-imports": "3.0.0",
     "husky": "8.0.3",
     "jsdom": "^22.1.0",
