@@ -8,30 +8,33 @@ on:
     types: [published]
 
 jobs:
-  publish-storybook:
-    needs: build
+  publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v3
         with:
           node-version: lts/*
-      - run: yarn
-      - run: yarn deploy-storybook --ci
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build and Deploy Storybook
+        run: yarn deploy-storybook --ci
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
-# Uncomment to enable auto publishing to npm
 
-#  publish-npm:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - uses: actions/checkout@v3
-#      - uses: actions/setup-node@v3
-#        with:
-#          node-version: lts/*
-#          registry-url: https://registry.npmjs.org/
-#      - run: yarn
-#      - run: yarn build
-#      - run: npm publish --access public
-#        env:
-#          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+      # - name: Build and publish to npm
+      #   if: github.ref == 'refs/tags/v*' # Only run on version tags
+      #   run: |
+      #     yarn build
+      #     npm login --registry=https://registry.npmjs.org/ --scope=your-scope
+      #     npm publish
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ secrets.YOUR_NPM_AUTH_TOKEN }}
