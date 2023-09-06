@@ -96,6 +96,8 @@ yarn publish
 
 #### 🤖 Auto publish after Github Release
 
+❗Important note: in order to automatically publish a Storybook on Github Pages you need to open your repository settings, navigate to "Actions" and enable "Read & write permissions" for Workflows.
+
 ❗Important note: in order to publish package to NPM you must add your token as a Github Action secret. Learn more on how to configure your repository and publish packages through Github Actions [here](https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages).
 
 ## 🎨 CSS & PostCSS
