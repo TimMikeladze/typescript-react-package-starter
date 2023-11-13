@@ -117,3 +117,4 @@ That's awesome! Feel free to add it to the list.
 - 📮 [next-invite](https://github.com/TimMikeladze/next-invite) - A drop-in invite system for your Next.js app. Generate and share invite links for users to join your app.
 - 🐌 [space-slug](https://github.com/TimMikeladze/space-slug) - Generate unique slugs and usernames using an intuitive api with zero dependencies.
 - 🗂️ [use-file-system](https://github.com/TimMikeladze/use-file-system) - A set of React hooks to interact with the File System API. Watch a directory for changes and return a map of filepaths & contents when a file is added, modified or removed.
+- ♾️ [react-infinite-observer](https://github.com/Tasin5541/react-infinite-observer) - A simple hook to implement infinite scroll in react component, with full control over the behavior. Implemented with IntersectionObserver.
