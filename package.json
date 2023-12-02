@@ -131,7 +131,7 @@
     "react-test-renderer": "18.2.0",
     "release-it": "16.2.1",
     "storybook": "7.5.2",
-    "tsup": "7.2.0",
+    "tsup": "8.0.1",
     "typescript": "5.2.2",
     "vitest": "^0.34.0",
     "yalc": "1.0.0-pre.53"
