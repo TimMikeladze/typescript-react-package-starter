@@ -8,6 +8,11 @@ on:
   release:
     types: [published]
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -23,15 +28,11 @@ jobs:
           node-version: lts/*
           cache: 'yarn'
 
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
-
-      - name: Build Storybook
-        run: yarn build-storybook
-
       - name: Deploy Storybook
         uses: bitovi/github-actions-storybook-to-github-pages@v1.0.1
         with:
+          install_command: yarn install --frozen-lockfile
+          build_command: yarn build-storybook
           path: storybook-static
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
