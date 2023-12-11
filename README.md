@@ -94,9 +94,9 @@ When you are ready to publish to NPM simply run the following command:
 yarn publish
 ```
 
-#### 🤖 Auto publish after Github Release
+#### 🤖 Auto publish after Github Release (or manually by dispatching the Publish workflow)
 
-❗Important note: in order to automatically publish a Storybook on Github Pages you need to open your repository settings, navigate to "Actions" and enable "Read & write permissions" for Workflows.
+❗Important note: in order to automatically publish a Storybook on Github Pages you need to open your repository settings, navigate to "Actions" and enable **"Read & write permissions"** for Workflows. Then navigate to "Pages" and choose **"GitHub Actions"** as the source for the Build and Deployment. After a successful deployment you can find your Storybook at `https://<your-github-username>.github.io/<your-repository-name>/`.
 
 ❗Important note: in order to publish package to NPM you must add your token as a Github Action secret. Learn more on how to configure your repository and publish packages through Github Actions [here](https://docs.github.com/en/actions/publishing-packages/publishing-nodejs-packages).
 
