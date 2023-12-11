@@ -25,8 +25,13 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Build and Deploy Storybook
-        run: yarn deploy-storybook --ci
+      - name: Build Storybook
+        run: yarn build-storybook
+
+      - name: Deploy Storybook
+        uses: bitovi/github-actions-storybook-to-github-pages@v1.0.0
+        with:
+          path: storybook-static
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
 
