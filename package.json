@@ -21,7 +21,6 @@
     "commit": "cz",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "deploy-storybook": "storybook-to-ghpages",
     "release": "yarn build && yarn release-it",
     "link:self": "yarn yalc publish && yarn link"
   },
@@ -94,7 +93,6 @@
     "@storybook/blocks": "7.6.3",
     "@storybook/react": "7.6.3",
     "@storybook/react-webpack5": "7.6.3",
-    "@storybook/storybook-deployer": "2.8.16",
     "@storybook/testing-library": "0.2.2",
     "@testing-library/jest-dom": "^6.0.0",
     "@testing-library/react": "^14.0.0",
