@@ -112,6 +112,7 @@ Additionally consider using the [tsup](https://github.com/egoist/tsup) configura
 
 That's awesome! Feel free to add it to the list.
 
+- ✅ [joy-ui-confirm](https://github.com/TimMikeladze/joy-ui-confirm) - Confirmation dialogs built on top of [@mui/joy](https://mui.com/joy-ui/getting-started/) and react hooks.
 - 🔐 [next-auth-mui](https://github.com/TimMikeladze/next-auth-mui) - Sign-in dialog for NextAuth built with MUI and React. Detects configured OAuth and Email providers and renders buttons or input fields for each respectively. Fully themeable, extensible and customizable to support custom credential flows.
 - 🗃️ [next-upload](https://github.com/TimMikeladze/next-upload) - Turn-key solution for signed & secure file-uploads to an S3 compliant storage service such as R2, AWS, or Minio. Built for Next.js.
 - 📮 [next-invite](https://github.com/TimMikeladze/next-invite) - A drop-in invite system for your Next.js app. Generate and share invite links for users to join your app.
