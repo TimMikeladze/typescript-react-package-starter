@@ -29,7 +29,7 @@ jobs:
           cache: 'yarn'
 
       - name: Deploy Storybook
-        uses: bitovi/github-actions-storybook-to-github-pages@v1.0.1
+        uses: bitovi/github-actions-storybook-to-github-pages@v1.0.2
         with:
           install_command: yarn install --frozen-lockfile
           build_command: yarn build-storybook
