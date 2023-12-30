@@ -24,25 +24,6 @@
     "release": "yarn build && yarn release-it",
     "link:self": "yarn yalc publish && yarn link"
   },
-  "tsup": {
-    "entry": [
-      "src/index.ts"
-    ],
-    "treeshake": true,
-    "sourcemap": "inline",
-    "minify": true,
-    "clean": true,
-    "dts": true,
-    "splitting": false,
-    "format": [
-      "cjs",
-      "esm"
-    ],
-    "external": [
-      "react"
-    ],
-    "injectStyle": false
-  },
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
