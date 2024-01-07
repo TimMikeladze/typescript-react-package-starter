@@ -56,6 +56,16 @@ Build package with `tsup` for production.
 yarn build
 ```
 
+### ▶️ Running files written in TypeScript
+
+To run a `.ts` file through Node.js you can simply the `ts` shorthand script in `package.json`.
+
+```console
+yarn ts ./path/to/file.ts
+```
+
+This is useful for running scripts, starting a server, or any other code you want to run while remaining type-safe.
+
 ### 🖇️ Linking
 
 Often times you want to `link` this package to another project when developing locally, circumventing the need to publish to NPM to consume it.
