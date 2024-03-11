@@ -14,7 +14,7 @@ cd my-package && git init
 pnpm install && pnpm dev
 ```
 
-❗Important note: This project uses [pnpm](https://pnpm.io/) for managing dependencies. If you want to use another package manager, remove the `pnpm-lock.yaml` and control-f for usages of `pnpm` in the project and replace them with your package manager of choice.
+❗Important note: This project uses [pnpm](https://pnpm.io/) for managing dependencies. If you want to use another package manager, remove the `pnpm-lock.yaml` and control-f for usages of `pnpm` in the project and replace them with your package manager of choice. If you don't have `pnpm` installed and want to use it, you can install it by running `npm install -g pnpm`.
 
 ## What's included?
 
