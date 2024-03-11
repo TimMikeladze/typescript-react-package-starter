@@ -22,17 +22,16 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up Node
-        uses: actions/setup-node@v4
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v2
         with:
-          node-version: lts/*
-          cache: 'yarn'
+          version: latest
 
       - name: Deploy Storybook
         uses: bitovi/github-actions-storybook-to-github-pages@v1.0.2
         with:
-          install_command: yarn install --frozen-lockfile
-          build_command: yarn build-storybook
+          install_command: pnpm install --frozen-lockfile
+          build_command: pnpm build-storybook
           path: storybook-static
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
@@ -40,7 +39,7 @@ jobs:
       # - name: Build and publish to npm
       #   if: github.ref == 'refs/tags/v*' # Only run on version tags
       #   run: |
-      #     yarn build
+      #     pnpm build
       #     npm login --registry=https://registry.npmjs.org/ --scope=your-scope
       #     npm publish
       #   env:

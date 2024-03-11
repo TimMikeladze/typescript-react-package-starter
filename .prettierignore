@@ -3,6 +3,7 @@ coverage
 storybook-static
 .prettierignore
 yarn.lock
+pnpm-lock.yaml
 *.snap
 .npmrc
 .husky

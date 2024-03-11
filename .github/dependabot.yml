@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    target-branch: 'master'
+    directory: '/'
+    schedule:
+      interval: 'monthly'
+    groups:
+      minor-and-patch-updates:
+        patterns:
+          - '*'
+        update-types:
+          - 'minor'
+          - 'patch'

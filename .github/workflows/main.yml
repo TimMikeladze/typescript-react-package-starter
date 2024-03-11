@@ -17,26 +17,25 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up Node
-        uses: actions/setup-node@v4
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v2
         with:
-          node-version: lts/*
-          cache: 'yarn'
+          version: latest
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: pnpm install --frozen-lockfile
 
       - name: Check types
-        run: yarn type-check
+        run: pnpm type-check
 
       - name: Check linting
-        run: yarn lint
+        run: pnpm lint
 
       - name: Run tests
-        run: yarn test:ci
+        run: pnpm test:ci
 
       - name: Build storybook
-        run: yarn build-storybook
+        run: pnpm build-storybook
 
       - name: Build package
-        run: yarn build
+        run: pnpm build
