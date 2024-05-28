@@ -119,10 +119,24 @@ Additionally consider using the [tsup](https://github.com/egoist/tsup) configura
 
 That's awesome! Feel free to add it to the list.
 
-- ✅ [mui-joy-confirm](https://github.com/TimMikeladze/mui-joy-confirm) - Confirmation dialogs built on top of [@mui/joy](https://mui.com/joy-ui/getting-started/) and react hooks.
-- 🔐 [next-auth-mui](https://github.com/TimMikeladze/next-auth-mui) - Sign-in dialog for NextAuth built with MUI and React. Detects configured OAuth and Email providers and renders buttons or input fields for each respectively. Fully themeable, extensible and customizable to support custom credential flows.
-- 🗃️ [next-upload](https://github.com/TimMikeladze/next-upload) - Turn-key solution for signed & secure file-uploads to an S3 compliant storage service such as R2, AWS, or Minio. Built for Next.js.
-- 📮 [next-invite](https://github.com/TimMikeladze/next-invite) - A drop-in invite system for your Next.js app. Generate and share invite links for users to join your app.
-- 🐌 [space-slug](https://github.com/TimMikeladze/space-slug) - Generate unique slugs and usernames using an intuitive api with zero dependencies.
-- 🗂️ [use-file-system](https://github.com/TimMikeladze/use-file-system) - A set of React hooks to interact with the File System API. Watch a directory for changes and return a map of filepaths & contents when a file is added, modified or removed.
-- ♾️ [react-infinite-observer](https://github.com/Tasin5541/react-infinite-observer) - A simple hook to implement infinite scroll in react component, with full control over the behavior. Implemented with IntersectionObserver.
+🗃️ **[Next Upload](https://github.com/TimMikeladze/next-upload)** - Turn-key solution for integrating Next.js with signed & secure file-uploads to an S3 compliant storage service such as R2, AWS, or Minio.
+
+🏁 **[Next Flag](https://github.com/TimMikeladze/next-flag)** - Feature flags powered by GitHub issues and NextJS. Toggle the features of your app by ticking a checkbox in a GitHub issue. Supports server-side rendering, multiple environments, and can be deployed as a stand-alone feature flag server.
+
+📮 **[Next Invite](https://github.com/TimMikeladze/next-invite)** - A drop-in invite system for your Next.js app. Generate and share invite links for users to join your app.
+
+🔐 **[Next Auth MUI](https://github.com/TimMikeladze/next-auth-mui)** - Sign-in dialog component for NextAuth built with Material UI and React. Detects configured OAuth and Email providers and renders buttons or input fields for each respectively. Fully themeable, extensible and customizable to support custom credential flows.
+
+⌚️ **[Next Realtime](https://github.com/TimMikeladze/next-realtime)** - Experimental drop-in solution for real-time data leveraging the Next.js Data Cache.
+
+✅ **[Mui Joy Confirm](https://github.com/TimMikeladze/mui-joy-confirm)** - Confirmation dialogs built on top of [@mui/joy](https://mui.com/joy-ui/getting-started/) and react hooks.
+
+🗂️ **[Use File System](https://github.com/TimMikeladze/use-file-system)** - A set of React hooks to interact with the File System API. Watch a directory for changes and return a map of filepaths & contents when a file is added, modified or removed.
+
+🐙 **[Use Octokit](https://github.com/TimMikeladze/use-octokit)** - A data-fetching hook built on top of the Octokit and SWR for interacting with the Github API. Use this inside a React component for a type-safe, data-fetching experience with caching, polling, and more.
+
+🐌 **[Space Slug](https://github.com/TimMikeladze/space-slug)** - Generate unique slugs, usernames, numbers, custom words, and more using an intuitive api with zero dependencies.
+
+🌡️ **[TSC Baseline](https://github.com/TimMikeladze/tsc-baseline/)** - Save a baseline of TypeScript errors and compare new errors against it. Useful for type-safe feature development in TypeScript projects that have a lot of errors. This tool will filter out errors that are already in the baseline and only show new errors.
+
+- ♾️ **[react-infinite-observer](https://github.com/Tasin5541/react-infinite-observer)** - A simple hook to implement infinite scroll in react component, with full control over the behavior. Implemented with IntersectionObserver.
