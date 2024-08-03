@@ -18,17 +18,14 @@ pnpm install && pnpm dev
 
 ## What's included?
 
-- ⚡️[tsup](https://github.com/egoist/tsup) - The simplest and fastest way to bundle your TypeScript libraries. Used to bundle package as ESM and CJS modules. Supports TypeScript, Code Splitting, PostCSS, and more out of the box.
+- ⚡️ [tsup](https://github.com/egoist/tsup) - The simplest and fastest way to bundle your TypeScript libraries. Used to bundle package as ESM and CJS modules. Supports TypeScript, Code Splitting, PostCSS, and more out of the box.
 - 📖 [Storybook](https://storybook.js.org/) - Build UI components and pages in isolation. It streamlines UI development, testing, and documentation.
 - 🧪 [Vitest](https://vitest.dev/) - A testing framework for JavaScript. Preconfigured to work with TypeScript and JSX.
+- ✅ [Biome](https://biomejs.dev/) - Format, lint, and more in a fraction of a second.
+- 🪝 [Lefthook](https://github.com/evilmartians/lefthook) — Run pre-commit hooks, lints staged files, executes tests, and more.
 - 🔼 [Release-it](https://github.com/release-it/release-it/) - release-it is a command line tool to automatically generate a new GitHub Release and populates it with the changes (commits) made since the last release.
 - 🐙 [Test & Publish via Github Actions](https://docs.github.com/en/actions) - CI/CD workflows for your package. Run tests on every commit plus integrate with Github Releases to automate publishing package to NPM and Storybook to Github Pages.
-- 📄 [Commitizen](https://github.com/commitizen/cz-cli) — When you commit with Commitizen, you'll be prompted to fill out any required commit fields at commit time.
-- 🐶 [Husky](https://github.com/typicode/husky) — Run scripts before committing.
-- 🚫 [lint-staged](https://github.com/okonet/lint-staged) — Run linters on git staged files
 - 🤖 [Dependabot](https://docs.github.com/en/code-security/dependabot) - Github powered dependency update tool that fits into your workflows. Configured to periodically check your dependencies for updates and send automated pull requests.
-- ☑️ [ESLint](https://eslint.org/) - A linter for JavaScript. Includes a simple configuration for React projects based on the recommended ESLint and AirBnB configs.
-- 🎨 [Prettier](https://prettier.io/) - An opinionated code formatter.
 - 🏃‍♀️‍➡️ [TSX](https://github.com/privatenumber/tsx) - Execute TypeScript files with zero-config in a Node.js environment.
 
 ## Usage
@@ -85,6 +82,14 @@ When you are ready to commit simply run the following command to get a well form
 pnpm commit
 ```
 
+### ✅ Linting
+
+To lint and reformat your code at any time, simply run the following command. Under the hood, this uses [Biome](https://biomejs.dev/). If you use VSCode, I suggest installing the official [biome extension](https://marketplace.visualstudio.com/items?itemName=biomejs.biome).
+
+```console
+pnpm lint
+```
+
 ### 🔖 Releasing, tagging & publishing to NPM
 
 Create a semantic version tag and publish to Github Releases. When a new release is detected a Github Action will automatically build the package and publish it to NPM. Additionally, a Storybook will be published to Github pages.
@@ -109,7 +114,37 @@ pnpm publish
 
 ## 🎨 CSS & PostCSS
 
-Import CSS files works out of the box. Simply import your CSS files in your components and they will be bundled with your package.
+To bundle CSS files with your package that you intend on users to import within their own project, a few extra steps are required.
+
+1. Add your CSS files to the `src` directory. For example, `src/styles.css`.
+2. Modify `tsup.config.ts` file to include your CSS file as an entry point. For example:
+
+```ts
+import { defineConfig } from "tsup";
+
+export default defineConfig({
+	entry: ["src/index.ts", "src/styles.css"],
+	// ...
+});
+```
+
+3. Modify `package.json` to include the CSS file as an `exports` entry. For example:
+
+```json
+{
+	"exports": {
+		"./styles.css": "./dist/styles.css"
+	}
+}
+```
+
+4. Now consumers of your package can import your CSS file anywhere in their project. For example:
+
+```ts
+import "your-package/styles.css";
+```
+
+Alternatively, if your package has a hard dependency on a CSS file and you want it to always be loaded when your package is imported, you can import it anywhere within your package's code and it will be bundled with-in your package.
 
 [tsup](https://github.com/egoist/tsup) supports PostCSS out of the box. Simply run `pnpm add postcss -D` add a `postcss.config.js` file to the root of your project, then add any plugins you need. Learn more how to configure PostCSS [here](https://tsup.egoist.dev/#css-support).
 

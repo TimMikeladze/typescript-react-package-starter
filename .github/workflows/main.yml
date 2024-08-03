@@ -3,11 +3,11 @@ name: Main
 on: [push]
 
 jobs:
-  run-ci:
+  main:
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    name: Run Type Check & Linters
+    name: Test & Build
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
@@ -46,16 +46,16 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Check types
-        run: pnpm type-check
+        run: pnpm tsc
 
       - name: Check linting
-        run: pnpm lint
+        run: pnpm lint:ci
 
       - name: Run tests
         run: pnpm test:ci
 
       - name: Build storybook
-        run: pnpm build-storybook
+        run: pnpm storybook:build
 
       - name: Build package
         run: pnpm build
