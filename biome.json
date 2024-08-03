@@ -1,0 +1,29 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.8.2/schema.json",
+	"files": {
+		"ignore": ["**/dist/**", "**/storybook-static/**", "**/coverage/**"]
+	},
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"all": true,
+			"style": {
+				"noDefaultExport": "off",
+				"useFilenamingConvention": "off"
+			},
+			"correctness": {
+				"noNodejsModules": "off"
+			},
+			"performance": {
+				"noReExportAll": "off",
+				"noBarrelFile": "off"
+			}
+		}
+	},
+	"formatter": {
+		"enabled": true
+	}
+}

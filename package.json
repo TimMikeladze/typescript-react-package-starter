@@ -1,123 +1,93 @@
 {
-  "name": "tsup-react-package-starter",
-  "description": "",
-  "version": "0.0.0",
-  "author": "",
-  "license": "",
-  "keywords": [],
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "scripts": {
-    "dev": "concurrently \"pnpm build --watch\" \"pnpm storybook\" \"pnpm test\" ",
-    "build": "tsup --onSuccess \"pnpm link:self\"",
-    "type-check": "tsc",
-    "lint": "eslint --ignore-path .gitignore \"{src,tests}/**/*.+(ts|js|tsx|jsx)\"",
-    "lint:fix": "pnpm lint --fix && prettier --write .",
-    "test": "vitest",
-    "test:ci": "vitest run --coverage",
-    "prepare": "husky",
-    "commit": "cz",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "release": "pnpm build && pnpm release-it",
-    "link:self": "pnpm link --global"
-  },
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs"
-    }
-  },
-  "files": [
-    "dist"
-  ],
-  "lint-staged": {
-    "./{src,tests}/**/*.{ts,js,jsx,tsx}": [
-      "eslint --ignore-path .gitignore --fix"
-    ],
-    "*": "prettier --write"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/@ryansonshine/cz-conventional-changelog"
-    }
-  },
-  "release-it": {
-    "git": {
-      "commitMessage": "chore(release): v${version}"
-    },
-    "github": {
-      "release": true
-    },
-    "npm": {
-      "publish": false
-    }
-  },
-  "engines": {
-    "node": ">=18.0.0"
-  },
-  "devDependencies": {
-    "@babel/core": "7.25.2",
-    "@babel/preset-env": "7.25.3",
-    "@babel/preset-react": "7.24.7",
-    "@babel/preset-typescript": "7.24.7",
-    "@ryansonshine/commitizen": "4.2.8",
-    "@ryansonshine/cz-conventional-changelog": "3.3.4",
-    "@storybook/addon-essentials": "8.2.6",
-    "@storybook/addon-interactions": "8.2.6",
-    "@storybook/addon-links": "8.2.6",
-    "@storybook/addon-webpack5-compiler-swc": "1.0.5",
-    "@storybook/blocks": "8.2.6",
-    "@storybook/react": "8.2.6",
-    "@storybook/react-webpack5": "8.2.6",
-    "@storybook/test": "8.2.6",
-    "@testing-library/jest-dom": "6.4.8",
-    "@testing-library/react": "16.0.0",
-    "@types/node": "22.0.2",
-    "@types/react": "18.3.3",
-    "@types/react-dom": "18.3.0",
-    "@types/react-test-renderer": "18.3.0",
-    "@typescript-eslint/eslint-plugin": "7.14.1",
-    "@typescript-eslint/parser": "7.14.1",
-    "@vitest/coverage-v8": "2.0.5",
-    "babel-loader": "9.1.3",
-    "concurrently": "8.2.2",
-    "eslint": "8.57.0",
-    "eslint-config-airbnb": "19.0.4",
-    "eslint-config-prettier": "9.1.0",
-    "eslint-plugin-import": "2.29.1",
-    "eslint-plugin-jsx-a11y": "6.9.0",
-    "eslint-plugin-prefer-arrow": "1.2.3",
-    "eslint-plugin-prettier": "5.1.3",
-    "eslint-plugin-react": "7.34.3",
-    "eslint-plugin-react-hooks": "4.6.2",
-    "eslint-plugin-sort-class-members": "1.20.0",
-    "eslint-plugin-storybook": "0.8.0",
-    "eslint-plugin-typescript-sort-keys": "3.2.0",
-    "eslint-plugin-unused-imports": "3.2.0",
-    "husky": "9.1.4",
-    "jsdom": "24.1.1",
-    "lint-staged": "15.2.7",
-    "prettier": "3.3.3",
-    "prop-types": "15.8.1",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "react-test-renderer": "18.3.1",
-    "release-it": "17.6.0",
-    "storybook": "8.2.6",
-    "ts-node": "10.9.2",
-    "tsconfig-paths": "4.2.0",
-    "tsup": "8.2.3",
-    "tsx": "4.16.4",
-    "typescript": "5.5.4",
-    "vitest": "2.0.5"
-  },
-  "peerDependencies": {
-    "react": ">=17",
-    "react-dom": ">=17"
-  },
-  "resolutions": {}
+	"name": "tsup-react-package-starter",
+	"description": "",
+	"version": "0.0.0",
+	"author": "",
+	"license": "",
+	"keywords": [],
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"scripts": {
+		"dev": "concurrently \"pnpm build --watch\" \"pnpm storybook\" \"pnpm test\" ",
+		"build": "tsup",
+		"lint": "biome check --write --unsafe .",
+		"lint:ci": "biome check --unsafe .",
+		"test": "vitest",
+		"test:ci": "vitest run --coverage",
+		"commit": "cz",
+		"storybook": "storybook dev -p 6006",
+		"storybook:build": "storybook build",
+		"release": "pnpm build && pnpm release-it",
+		"link:self": "pnpm link --global",
+		"prepare": "lefthook install"
+	},
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"require": "./dist/index.js",
+			"import": "./dist/index.mjs"
+		}
+	},
+	"files": ["dist"],
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/@ryansonshine/cz-conventional-changelog"
+		}
+	},
+	"release-it": {
+		"git": {
+			"commitMessage": "chore(release): v${version}"
+		},
+		"github": {
+			"release": true
+		},
+		"npm": {
+			"publish": false
+		}
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.8.3",
+		"@ryansonshine/commitizen": "4.2.8",
+		"@ryansonshine/cz-conventional-changelog": "3.3.4",
+		"@storybook/addon-essentials": "8.2.7",
+		"@storybook/addon-interactions": "8.2.7",
+		"@storybook/addon-links": "8.2.7",
+		"@storybook/addon-webpack5-compiler-swc": "1.0.5",
+		"@storybook/blocks": "8.2.7",
+		"@storybook/react": "8.2.7",
+		"@storybook/react-webpack5": "8.2.7",
+		"@storybook/test": "8.2.7",
+		"@testing-library/jest-dom": "6.4.8",
+		"@testing-library/react": "16.0.0",
+		"@types/node": "22.1.0",
+		"@types/react": "18.3.3",
+		"@types/react-dom": "18.3.0",
+		"@types/react-test-renderer": "18.3.0",
+		"@vitest/coverage-v8": "2.0.5",
+		"concurrently": "8.2.2",
+		"jsdom": "24.1.1",
+		"lefthook": "^1.7.11",
+		"prop-types": "15.8.1",
+		"react": "18.3.1",
+		"react-dom": "18.3.1",
+		"react-test-renderer": "18.3.1",
+		"release-it": "17.6.0",
+		"storybook": "8.2.7",
+		"ts-node": "10.9.2",
+		"tsconfig-paths": "4.2.0",
+		"tsup": "8.2.4",
+		"tsx": "4.16.5",
+		"typescript": "5.5.4",
+		"vitest": "2.0.5"
+	},
+	"peerDependencies": {
+		"react": ">=17",
+		"react-dom": ">=17"
+	},
+	"resolutions": {}
 }

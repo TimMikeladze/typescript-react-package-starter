@@ -1,0 +1,9 @@
+pre-commit:
+  parallel: true
+  commands:
+    lint:
+      run: pnpm biome check --write --unsafe --staged --no-errors-on-unmatched
+    types:
+      run: pnpm tsc
+    test:
+      run: pnpm vitest --run
