@@ -7,7 +7,7 @@ A slightly opinionated starter kit for developing TypeScript and/or React NPM pa
 ## 🏃 Getting started
 
 ```console
-npx degit TimMikeladze/tsup-react-package-starter my-package
+npx degit TimMikeladze/typescript-react-package-starter my-package
 
 cd my-package && git init
 
