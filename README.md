@@ -1,6 +1,6 @@
-# 📦 React • Typescript • Package Starter
+# 📦 Typescript • React • Package Starter
 
-A slightly opinionated starter kit for developing React and/or TypeScript packages. It comes with a several pre-configured tools, so you could focus on coding instead of configuring a project for the nth time. From building to releasing a package, this starter kit has you covered.
+A slightly opinionated starter kit for developing TypeScript and/or React NPM packages. It comes with a several pre-configured tools, so you could focus on coding instead of configuring a project for the nth time. From building to releasing a package, this starter kit has you covered.
 
 > 👋 Hello there! Follow me [@linesofcode](https://twitter.com/linesofcode) or visit [linesofcode.dev](https://linesofcode.dev) for more cool projects like this one.
 
