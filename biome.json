@@ -1,14 +1,38 @@
 {
 	"$schema": "https://biomejs.dev/schemas/1.8.2/schema.json",
 	"files": {
-		"ignore": ["**/dist/**", "**/storybook-static/**", "**/coverage/**"]
+		"ignore": [
+			"**/dist/**",
+			"**/storybook-static/**",
+			"**/coverage/**",
+			"**/.next/**"
+		]
 	},
 	"organizeImports": {
 		"enabled": true
 	},
+	"css": {
+		"formatter": {
+			"enabled": true
+		},
+		"linter": {
+			"enabled": true
+		}
+	},
+
 	"linter": {
 		"enabled": true,
 		"rules": {
+			"nursery": {
+				"useSortedClasses": {
+					"fix": "safe",
+					"level": "error",
+					"options": {
+						"attributes": ["classList"],
+						"functions": ["clsx", "cm", "cva", "tw"]
+					}
+				}
+			},
 			"all": true,
 			"style": {
 				"noDefaultExport": "off",
