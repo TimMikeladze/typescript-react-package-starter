@@ -22,7 +22,7 @@ importers:
         version: 8.2.7(storybook@8.2.7(@babel/preset-env@7.25.3(@babel/core@7.25.2)))
       '@storybook/addon-interactions':
         specifier: 8.2.7
-        version: 8.2.7(storybook@8.2.7(@babel/preset-env@7.25.3(@babel/core@7.25.2)))(vitest@2.0.5(@types/node@22.1.0)(jsdom@24.1.1)(terser@5.31.3))
+        version: 8.2.7(storybook@8.2.7(@babel/preset-env@7.25.3(@babel/core@7.25.2)))(vitest@2.0.5(@types/node@22.1.0)(jsdom@25.0.0)(terser@5.31.3))
       '@storybook/addon-links':
         specifier: 8.2.7
         version: 8.2.7(react@18.3.1)(storybook@8.2.7(@babel/preset-env@7.25.3(@babel/core@7.25.2)))
@@ -40,7 +40,7 @@ importers:
         version: 8.2.7(@swc/core@1.7.4)(esbuild@0.23.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@8.2.7(@babel/preset-env@7.25.3(@babel/core@7.25.2)))(typescript@5.5.4)
       '@storybook/test':
         specifier: 8.2.7
-        version: 8.2.7(storybook@8.2.7(@babel/preset-env@7.25.3(@babel/core@7.25.2)))(vitest@2.0.5(@types/node@22.1.0)(jsdom@24.1.1)(terser@5.31.3))
+        version: 8.2.7(storybook@8.2.7(@babel/preset-env@7.25.3(@babel/core@7.25.2)))(vitest@2.0.5(@types/node@22.1.0)(jsdom@25.0.0)(terser@5.31.3))
       '@testing-library/jest-dom':
         specifier: 6.4.8
         version: 6.4.8
@@ -61,13 +61,13 @@ importers:
         version: 18.3.0
       '@vitest/coverage-v8':
         specifier: 2.0.5
-        version: 2.0.5(vitest@2.0.5(@types/node@22.1.0)(jsdom@24.1.1)(terser@5.31.3))
+        version: 2.0.5(vitest@2.0.5(@types/node@22.1.0)(jsdom@25.0.0)(terser@5.31.3))
       concurrently:
         specifier: 8.2.2
         version: 8.2.2
       jsdom:
-        specifier: 24.1.1
-        version: 24.1.1
+        specifier: 25.0.0
+        version: 25.0.0
       lefthook:
         specifier: ^1.7.11
         version: 1.7.11
@@ -106,7 +106,7 @@ importers:
         version: 5.5.4
       vitest:
         specifier: 2.0.5
-        version: 2.0.5(@types/node@22.1.0)(jsdom@24.1.1)(terser@5.31.3)
+        version: 2.0.5(@types/node@22.1.0)(jsdom@25.0.0)(terser@5.31.3)
 
 packages:
 
@@ -3443,8 +3443,8 @@ packages:
       '@babel/preset-env':
         optional: true
 
-  jsdom@24.1.1:
-    resolution: {integrity: sha512-5O1wWV99Jhq4DV7rCLIoZ/UIhyQeDR7wHVyZAHAshbrvZsLs+Xzz7gtwnlJTJDjleiTKh54F4dXrX70vJQTyJQ==}
+  jsdom@25.0.0:
+    resolution: {integrity: sha512-OhoFVT59T7aEq75TVw9xxEfkXgacpqAhQaYgP9y/fDqWQCMB/b1H66RfmPm/MaeaAIU9nDwMOVTlPN51+ao6CQ==}
     engines: {node: '>=18'}
     peerDependencies:
       canvas: ^2.11.2
@@ -6644,11 +6644,11 @@ snapshots:
       '@storybook/global': 5.0.0
       storybook: 8.2.7(@babel/preset-env@7.25.3(@babel/core@7.25.2))
 
-  '@storybook/addon-interactions@8.2.7(storybook@8.2.7(@babel/preset-env@7.25.3(@babel/core@7.25.2)))(vitest@2.0.5(@types/node@22.1.0)(jsdom@24.1.1)(terser@5.31.3))':
+  '@storybook/addon-interactions@8.2.7(storybook@8.2.7(@babel/preset-env@7.25.3(@babel/core@7.25.2)))(vitest@2.0.5(@types/node@22.1.0)(jsdom@25.0.0)(terser@5.31.3))':
     dependencies:
       '@storybook/global': 5.0.0
       '@storybook/instrumenter': 8.2.7(storybook@8.2.7(@babel/preset-env@7.25.3(@babel/core@7.25.2)))
-      '@storybook/test': 8.2.7(storybook@8.2.7(@babel/preset-env@7.25.3(@babel/core@7.25.2)))(vitest@2.0.5(@types/node@22.1.0)(jsdom@24.1.1)(terser@5.31.3))
+      '@storybook/test': 8.2.7(storybook@8.2.7(@babel/preset-env@7.25.3(@babel/core@7.25.2)))(vitest@2.0.5(@types/node@22.1.0)(jsdom@25.0.0)(terser@5.31.3))
       polished: 4.3.1
       storybook: 8.2.7(@babel/preset-env@7.25.3(@babel/core@7.25.2))
       ts-dedent: 2.2.0
@@ -6932,12 +6932,12 @@ snapshots:
     optionalDependencies:
       typescript: 5.5.4
 
-  '@storybook/test@8.2.7(storybook@8.2.7(@babel/preset-env@7.25.3(@babel/core@7.25.2)))(vitest@2.0.5(@types/node@22.1.0)(jsdom@24.1.1)(terser@5.31.3))':
+  '@storybook/test@8.2.7(storybook@8.2.7(@babel/preset-env@7.25.3(@babel/core@7.25.2)))(vitest@2.0.5(@types/node@22.1.0)(jsdom@25.0.0)(terser@5.31.3))':
     dependencies:
       '@storybook/csf': 0.1.11
       '@storybook/instrumenter': 8.2.7(storybook@8.2.7(@babel/preset-env@7.25.3(@babel/core@7.25.2)))
       '@testing-library/dom': 10.1.0
-      '@testing-library/jest-dom': 6.4.5(vitest@2.0.5(@types/node@22.1.0)(jsdom@24.1.1)(terser@5.31.3))
+      '@testing-library/jest-dom': 6.4.5(vitest@2.0.5(@types/node@22.1.0)(jsdom@25.0.0)(terser@5.31.3))
       '@testing-library/user-event': 14.5.2(@testing-library/dom@10.1.0)
       '@vitest/expect': 1.6.0
       '@vitest/spy': 1.6.0
@@ -7021,7 +7021,7 @@ snapshots:
       lz-string: 1.5.0
       pretty-format: 27.5.1
 
-  '@testing-library/jest-dom@6.4.5(vitest@2.0.5(@types/node@22.1.0)(jsdom@24.1.1)(terser@5.31.3))':
+  '@testing-library/jest-dom@6.4.5(vitest@2.0.5(@types/node@22.1.0)(jsdom@25.0.0)(terser@5.31.3))':
     dependencies:
       '@adobe/css-tools': 4.4.0
       '@babel/runtime': 7.25.0
@@ -7032,7 +7032,7 @@ snapshots:
       lodash: 4.17.21
       redent: 3.0.0
     optionalDependencies:
-      vitest: 2.0.5(@types/node@22.1.0)(jsdom@24.1.1)(terser@5.31.3)
+      vitest: 2.0.5(@types/node@22.1.0)(jsdom@25.0.0)(terser@5.31.3)
 
   '@testing-library/jest-dom@6.4.8':
     dependencies:
@@ -7212,7 +7212,7 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitest/coverage-v8@2.0.5(vitest@2.0.5(@types/node@22.1.0)(jsdom@24.1.1)(terser@5.31.3))':
+  '@vitest/coverage-v8@2.0.5(vitest@2.0.5(@types/node@22.1.0)(jsdom@25.0.0)(terser@5.31.3))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@bcoe/v8-coverage': 0.2.3
@@ -7226,7 +7226,7 @@ snapshots:
       std-env: 3.7.0
       test-exclude: 7.0.1
       tinyrainbow: 1.2.0
-      vitest: 2.0.5(@types/node@22.1.0)(jsdom@24.1.1)(terser@5.31.3)
+      vitest: 2.0.5(@types/node@22.1.0)(jsdom@25.0.0)(terser@5.31.3)
     transitivePeerDependencies:
       - supports-color
 
@@ -8937,7 +8937,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  jsdom@24.1.1:
+  jsdom@25.0.0:
     dependencies:
       cssstyle: 4.0.1
       data-urls: 5.0.0
@@ -10566,7 +10566,7 @@ snapshots:
       fsevents: 2.3.3
       terser: 5.31.3
 
-  vitest@2.0.5(@types/node@22.1.0)(jsdom@24.1.1)(terser@5.31.3):
+  vitest@2.0.5(@types/node@22.1.0)(jsdom@25.0.0)(terser@5.31.3):
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@vitest/expect': 2.0.5
@@ -10589,7 +10589,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 22.1.0
-      jsdom: 24.1.1
+      jsdom: 25.0.0
     transitivePeerDependencies:
       - less
       - lightningcss
