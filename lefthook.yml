@@ -1,9 +1,11 @@
 pre-commit:
-  parallel: true
+  parallel: false
   commands:
     lint:
       run: pnpm biome check --write --unsafe --staged --no-errors-on-unmatched && git add -u
-    types:
+    typecheck:
       run: pnpm tsc
+    build:
+      run: pnpm build
     test:
-      run: pnpm vitest --run
+      run: pnpm test:ci

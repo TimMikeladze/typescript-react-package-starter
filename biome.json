@@ -1,11 +1,12 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.8.2/schema.json",
+	"$schema": "https://biomejs.dev/schemas/1.9.2/schema.json",
 	"files": {
 		"ignore": [
 			"**/dist/**",
 			"**/storybook-static/**",
 			"**/coverage/**",
-			"**/.next/**"
+			"**/.next/**",
+			"**/node_modules/**"
 		]
 	},
 	"organizeImports": {
@@ -36,14 +37,34 @@
 			"all": true,
 			"style": {
 				"noDefaultExport": "off",
-				"useFilenamingConvention": "off"
-			},
-			"correctness": {
-				"noNodejsModules": "off"
+				"useFilenamingConvention": "off",
+				"useNamingConvention": {
+					"level": "error",
+					"options": {
+						"strictCase": false
+					}
+				}
 			},
 			"performance": {
 				"noReExportAll": "off",
 				"noBarrelFile": "off"
+			},
+			"suspicious": {
+				"noReactSpecificProps": "off",
+				"noConsole": {
+					"fix": "none",
+					"level": "warn"
+				},
+				"noConsoleLog": {
+					"fix": "none",
+					"level": "warn"
+				}
+			},
+			"correctness": {
+				"useImportExtensions": "off",
+				"noUndeclaredDependencies": "off",
+				"noUnusedVariables": "off",
+				"noNodejsModules": "off"
 			}
 		}
 	},

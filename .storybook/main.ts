@@ -11,7 +11,6 @@ const config: StorybookConfig = {
 		name: "@storybook/react-webpack5",
 		options: {
 			builder: {
-				// biome-ignore lint/style/useNamingConvention: <explanation>
 				useSWC: true,
 			},
 		},
