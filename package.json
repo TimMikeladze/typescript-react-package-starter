@@ -89,5 +89,9 @@
 		"react": ">=17",
 		"react-dom": ">=17"
 	},
-	"resolutions": {}
+	"pnpm": {
+		"overrides": {
+			"micromatch@<4.0.8": ">=4.0.8"
+		}
+	}
 }
