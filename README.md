@@ -181,3 +181,5 @@ That's awesome! Feel free to add it to the list.
 🎋 **[GitHub Issue to Branch](https://github.com/TimMikeladze/github-issue-to-branch)** - CLI tool to quickly create well-named branches from GitHub issues.
 
 📏 **[React DevBar](https://github.com/TimMikeladze/react-devbar/)** - A customizable floating toolbar for React applications. Build and integrate your own dev tools with a draggable interface inspired by the Vercel toolbar. Perfect for adding debugging panels, theme controls, and other development utilities for your app.
+
+⏲️ **[Fake Time Series](https://github.com/TimMikeladze/fake-time-series/)** - A flexible CLI tool and library for generating fake time series data. Perfect for testing, development, and demonstration purposes.
