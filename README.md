@@ -178,6 +178,8 @@ That's awesome! Feel free to add it to the list.
 
 ♾️ **[react-infinite-observer](https://github.com/Tasin5541/react-infinite-observer)** - A simple hook to implement infinite scroll in react component, with full control over the behavior. Implemented with IntersectionObserver.
 
+</> **[react-simple-devicons](https://github.com/shawilly/react-simple-devicons)** - A straightforward React implementation that provides access to SVG dev icons from (devicon.dev)[https://devicon.dev], allowing customization of color, size, and styling.
+
 🎋 **[GitHub Issue to Branch](https://github.com/TimMikeladze/github-issue-to-branch)** - CLI tool to quickly create well-named branches from GitHub issues.
 
 📏 **[React DevBar](https://github.com/TimMikeladze/react-devbar/)** - A customizable floating toolbar for React applications. Build and integrate your own dev tools with a draggable interface inspired by the Vercel toolbar. Perfect for adding debugging panels, theme controls, and other development utilities for your app.
