@@ -176,6 +176,8 @@ That's awesome! Feel free to add it to the list.
 
 🌡️ **[TSC Baseline](https://github.com/TimMikeladze/tsc-baseline/)** - Save a baseline of TypeScript errors and compare new errors against it. Useful for type-safe feature development in TypeScript projects that have a lot of errors. This tool will filter out errors that are already in the baseline and only show new errors.
 
+✅ **[react-ai-translator](https://github.com/CodeThicket/react-ai-translator)** - A React hook for local, secure, on-demand translations powered by the Xenova/nllb-200-distilled-600M model. This package utilizes the WebGPU capabilities of the device on which the app runs, ensuring data privacy and enabling you to translate text without sending data to third-party APIs.
+
 ♾️ **[react-infinite-observer](https://github.com/Tasin5541/react-infinite-observer)** - A simple hook to implement infinite scroll in react component, with full control over the behavior. Implemented with IntersectionObserver.
 
 </> **[react-simple-devicons](https://github.com/shawilly/react-simple-devicons)** - A straightforward React implementation that provides access to SVG dev icons from (devicon.dev)[https://devicon.dev], allowing customization of color, size, and styling.
