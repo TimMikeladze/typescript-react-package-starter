@@ -168,7 +168,7 @@ That's awesome! Feel free to add it to the list.
 
 ✅ **[Mui Joy Confirm](https://github.com/TimMikeladze/mui-joy-confirm)** - Confirmation dialogs built on top of [@mui/joy](https://mui.com/joy-ui/getting-started/) and react hooks.
 
-🗂️ **[Use File System](https://github.com/TimMikeladze/use-file-system)** - A set of React hooks to interact with the File System API. Watch a directory for changes and return a map of filepaths & contents when a file is added, modified or removed.
+🗂️ **[Use FS](https://github.com/TimMikeladze/use-fs)** - A React hook for integrating with the File System Access API.
 
 🐙 **[Use Octokit](https://github.com/TimMikeladze/use-octokit)** - A data-fetching hook built on top of the Octokit and SWR for interacting with the Github API. Use this inside a React component for a type-safe, data-fetching experience with caching, polling, and more.
 
@@ -187,3 +187,5 @@ That's awesome! Feel free to add it to the list.
 📏 **[React DevBar](https://github.com/TimMikeladze/react-devbar/)** - A customizable floating toolbar for React applications. Build and integrate your own dev tools with a draggable interface inspired by the Vercel toolbar. Perfect for adding debugging panels, theme controls, and other development utilities for your app.
 
 ⏲️ **[Fake Time Series](https://github.com/TimMikeladze/fake-time-series/)** - A flexible CLI tool and library for generating fake time series data. Perfect for testing, development, and demonstration purposes.
+
+📡 **[Install Command](https://github.com/TimMikeladze/react-install-command/)** - A React component for rendering a 'npm install <package name>' command block. Supports multiple package managers.
