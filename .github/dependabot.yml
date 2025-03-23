@@ -1,7 +1,7 @@
 version: 2
 updates:
   - package-ecosystem: 'npm'
-    target-branch: 'master'
+    target-branch: 'main'
     directory: '/'
     schedule:
       interval: 'monthly'

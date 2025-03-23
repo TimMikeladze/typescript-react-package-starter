@@ -92,6 +92,12 @@
 	"pnpm": {
 		"overrides": {
 			"micromatch@<4.0.8": ">=4.0.8"
-		}
+		},
+		"onlyBuiltDependencies": [
+			"@biomejs/biome",
+			"@swc/core",
+			"esbuild",
+			"lefthook"
+		]
 	}
 }
