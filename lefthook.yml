@@ -1,5 +1,5 @@
 pre-commit:
-  parallel: false
+  parallel: true
   commands:
     lint:
       run: pnpm biome check --write --unsafe --staged --no-errors-on-unmatched && git add -u
